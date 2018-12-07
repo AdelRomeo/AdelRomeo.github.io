@@ -1,0 +1,19 @@
+@mixin margin-auto{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin title-style{
+	font-family: $main-font;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+}
+
+@mixin desc-style{
+	font-family: $main-font;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+}

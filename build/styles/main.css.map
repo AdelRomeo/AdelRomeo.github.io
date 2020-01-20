@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.scss"],"names":[],"mappings":"AAAA,IAAI,CACF,UAAU,CAAE,GAAG,CACf,OAAO,CAAE,IAAI,CACd","file":"main.css","sourcesContent":["body{\n  background: red;\n  padding: 10px;\n}"]}

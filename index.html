@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="src">
+    <link rel="stylesheet" href="build/styles/normalize.css">
+    <link rel="stylesheet" href="build/styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
+    <div id="particl"></div>
     <main class="main">
         <header class="main-header">
             <nav class="navigation">
@@ -16,7 +19,7 @@
                     <li class="navigation-item">PORTFOLIO</li>
                 </ul>
             </nav>
-            <h1 class="main-header_greeting">Hello! Welcome to my website.</h1>
+            <h1 class="main-header_greeting">Hello! Welcome to my website!</h1>
             <div class="main-header_about">
                 <p class="main_descr">Информация обо мне (краткая)</p>
                 <button class="main_btn-more">KNOW MORE</button>
@@ -101,5 +104,7 @@
             </ul>
         </footer>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="src/scripts/particl.js"></script>
 </body>
 </html>

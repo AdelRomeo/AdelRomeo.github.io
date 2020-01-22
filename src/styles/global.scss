@@ -1,0 +1,41 @@
+@import "varibles";
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  font-family: $main-font;
+  box-sizing: border-box;
+}
+
+.main{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background: white;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (max-width: 1140px) {
+  .main{
+    width: 100%;
+  }
+}

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="build/styles/normalize.css">
     <link rel="stylesheet" href="build/styles/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.amd.js"></script> <!--подключение шаблонизатора-->
+    <script src="https://vk.com/js/api/openapi.js"></script>
 </head>
 <body>
     <div id="particl"></div>
@@ -39,6 +41,12 @@
                 <a href=""><svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg"><path d="m320 136c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8 3.582031-8 8-8 8 3.582031 8 8zm0 0"/><path d="m328 96h-208c-13.253906 0-24 10.746094-24 24v208c0 13.253906 10.746094 24 24 24h208c13.253906 0 24-10.746094 24-24v-208c0-13.253906-10.746094-24-24-24zm-104 208c-44.183594 0-80-35.816406-80-80s35.816406-80 80-80 80 35.816406 80 80c-.046875 44.164062-35.835938 79.953125-80 80zm88-144c-13.253906 0-24-10.746094-24-24s10.746094-24 24-24 24 10.746094 24 24-10.746094 24-24 24zm0 0"/><path d="m288 224c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"/><path d="m224 0c-123.710938 0-224 100.289062-224 224s100.289062 224 224 224 224-100.289062 224-224c-.140625-123.652344-100.347656-223.859375-224-224zm144 328c-.027344 22.082031-17.917969 39.972656-40 40h-208c-22.082031-.027344-39.972656-17.917969-40-40v-208c.027344-22.082031 17.917969-39.972656 40-40h208c22.082031.027344 39.972656 17.917969 40 40zm0 0"/></svg></a>
             </div>
         </header>
+        <!--test api vk-->
+        <div class="container"> <!--test api vk-->
+            <h1 class="headerh1"></h1>
+            <div class="results"></div>
+        </div>
+        <!--test api vk-->
         <section class="skills">
             <h2 class="skills-title title-section">Skills</h2>
             <ul class="skills-list">
@@ -118,6 +126,7 @@
             </ul>
         </footer>
     </main>
+    <script src="src/scripts/vkApi.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="src/scripts/mainparticl.js"></script>
 </body>

@@ -15,7 +15,7 @@ function auth() {
 }
 
 function callApi(method, params){ //универсальная функция для вызова разных методов с разными параметрами
-    //params.v = '5.62'; // версия запроса. укузывается в некоторых случаях
+    params.v = '5.103'; // версия запроса. укузывается в некоторых случаях
     return new Promise((resolve, reject) => {
         VK.api(method, params, (data)=>{
             if (data.error){ // если появилась ошибка

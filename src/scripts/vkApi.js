@@ -32,5 +32,5 @@ auth()
         return callApi('users.get', {fields: 'photo_100'})
     })
     .then((data)=>{
-        console.log(data)
+        console.log(data[0].id)
     });

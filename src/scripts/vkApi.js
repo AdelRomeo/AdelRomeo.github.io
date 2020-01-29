@@ -34,7 +34,7 @@ auth()
     .then((data)=>{
         const resu = document.querySelector('.results');
         for (let i = 0; i < data.items.length; i++){
-            resu.textContent += data.items[i].id + data.items[i].last_name + '<br>';
+            resu.innerHTML += data.items[i].id + ' ' + data.items[i].last_name;
             console.log(data.items[i].id);
         }
         console.log(data);

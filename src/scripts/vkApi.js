@@ -32,5 +32,5 @@ auth()
         return callApi('friends.get', {fields: 'photo_100'})
     })
     .then((data)=>{
-        console.log(data[0].id)
+        console.log(data)
     });

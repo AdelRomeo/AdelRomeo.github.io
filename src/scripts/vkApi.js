@@ -14,13 +14,13 @@ function auth() {
     })
 }
 
-function callApi(method, params){
-    params.v = '5.62';
+function callApi(method, params){ //универсальная функция для вызова разных методов с разными параметрами
+    params.v = '5.62'; // версия запроса
     return new Promise((resolve, reject) => {
         VK.api(method, params, (data)=>{
-            if (data.error){
+            if (data.error){ // если появилась ошибка
                 reject(data.error)
-            } else {
+            } else { // если все норм
                 resolve(data.response)
             }
         })
@@ -28,9 +28,9 @@ function callApi(method, params){
 }
 
 auth()
-    .then(()=>{
-        return callApi('users.get', {fields: 'photo_100'})
+    .then(()=>{ // когда все норм
+        return callApi('friends.get')
     })
     .then((data)=>{
-        console.log(data[0].id)
+        console.log(data)
     });

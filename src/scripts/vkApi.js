@@ -35,6 +35,7 @@ auth()
         const resu = document.querySelector('.results');
         for (let i = 0; i < data.items; i++){
             resu.textContent += data.items[i].id;
+            console.log(data.items[i].id);
         }
         console.log(data)
     });

@@ -14,8 +14,22 @@ function auth() {
     })
 }
 
+function callApi(method, params){
+    return new Promise((resolve, reject) => {
+        VK.api(method, params, (response)=>{
+            if (response.error){
+                reject(response.error)
+            } else {
+                resolve(response)
+            }
+        })
+    })
+}
+
 auth()
     .then(()=>{
-        VK.api('users.get', {fields: 'photo_50'}, () =>{console.log('пришло фото')}); // отправка запроса на сервер вк. первое этот метод.
-        // второе это параметры метода, третье это функция которая выполнится
+        return callApi('users.get', {fields: 'photo_100'})
+    })
+    .then((response)=>{
+        console.log(response)
     });

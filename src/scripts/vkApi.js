@@ -29,11 +29,11 @@ function callApi(method, params){ //универсальная функция д
 
 auth()
     .then(()=>{ // когда все норм
-        return callApi('friends.get', {fields: 'photo_100'})
+        return callApi('friends.get', {fields: 'photo_100'}) //отправка запроса на получения списка друзей и их фото
     })
-    .then((data)=>{
+    .then((data)=>{ // когда список друзей будет получен
         const resu = document.querySelector('.results');
-        for (let i = 0; i < data.items.length; i++){
+        for (let i = 0; i < data.items.length; i++){ // перебор всех друзей
             resu.innerHTML += data.items[i].id + ' ' + data.items[i].last_name + '<br>';
             console.log(data.items[i].id);
         }

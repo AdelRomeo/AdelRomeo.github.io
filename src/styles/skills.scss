@@ -1,0 +1,125 @@
+/*---Анимация скилл-баров---*/
+
+.circle {
+  position: relative;
+  transform: translate(0%, 0%) scale(1.6);
+  width: 160px;
+  height: 160px;
+  border: 2px solid #dcdcdc;
+  border-top: none;
+  overflow: hidden;
+  border-radius: 5%;
+  &:hover{
+    .skills_hidden-list{
+      opacity: 1;
+      transition: all ease 600ms;
+    }
+  }
+}
+
+.wave
+{
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 50px rgba(000,000,000,0.3);
+}
+
+.wave1{
+  background: #F77239;
+}
+
+.wave2{
+  background: #146FB1;
+}
+
+.wave3{
+  background: #eedb00;
+}
+
+.wave4{
+  background: #0bf758;
+}
+
+.wave:before,
+.wave:after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 195%;
+  left: 50%;
+  transform: translate(-50%,-75%);
+  background: #000;
+}
+
+.wave1:before,
+.wave1:after{
+  top: -60px;
+}
+
+.wave2:before,
+.wave2:after{
+  top: -60px;
+}
+
+.wave3:before,
+.wave3:after{
+  top: -35px;
+}
+
+.wave4:before,
+.wave4:after{
+  top: -10px;
+}
+
+.wave:before {
+  border-radius: 45%;
+  background: rgba(255,255,255,1);
+  animation: animate 10s linear infinite;
+}
+
+.wave:after {
+  border-radius: 40%;
+  background: rgba(255,255,255,.5);
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(-50%,-75%) rotate(360deg);
+  }
+}
+
+/*---Конец анимация скилл-баров---*/
+
+.skills{
+  width: 100%;
+  padding-top: 100px;
+}
+
+.skills-list{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.skills-item{
+}
+
+.skills-info{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.skills_hidden-list{
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  line-height: 24px;
+  bottom: 5px;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.46);
+  opacity: 0;
+  transition: all ease 600ms;
+}

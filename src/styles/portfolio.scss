@@ -1,0 +1,49 @@
+body{
+  width: 100%;
+  background: #00aaaa;
+}
+
+.main-menu{
+  display: flex;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  flex-direction: column;
+  & > button{
+    position: relative;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 7px;
+    color: white;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.hover-affect{
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background: #0bf758;
+  border-radius: 15px;
+  top: 7px;
+  transition: all 1s;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -50px;
+    top: 30px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+  }
+}
+
+.hover-affect-hover{
+  &:before{
+    background: #0bf758;
+  }
+}

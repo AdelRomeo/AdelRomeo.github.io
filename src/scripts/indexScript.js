@@ -3,6 +3,7 @@ const menu = document.querySelector('.main-menu');
 const backEffect = document.querySelector('.hover-affect');
 const body = document.querySelector('body');
 
+
 (() => {
     menu.addEventListener('click', async (e)=>{
 
@@ -47,3 +48,4 @@ const body = document.querySelector('body');
 
     })
 })();
+

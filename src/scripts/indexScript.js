@@ -5,7 +5,7 @@ const body = document.querySelector('body');
 
 
 (() => {
-    menu.addEventListener('click', async (e)=>{
+    menu.addEventListener('click', (e)=>{
 
         // if (e.target !== btnS[0]){ // кружок рядом с фоном
         //     backEffect.classList.add('hover-affect-hover')

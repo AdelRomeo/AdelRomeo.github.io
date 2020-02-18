@@ -53,12 +53,13 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
 
         clusterer = new ymaps.Clusterer({ // создание кластеререзатора (схлопывание меток на карте из нескольких в одну)
             present: 'islands#invertedVioletClusterIcons', // тип иконки на карте
-            clusterDisableClickZoom: true, // запрет зума при клике по элементу на курте
+            clusterDisableClickZoom: true, // запрет зума при клике по элементу на карте
             openBalloonOnClick: false // запрет открытия информации о метке при клике по ней
         });
 
         myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
-        console.log(friends.items);
+        console.log(friends.response.items);
+        console.log('test');
         //return friends.items; // пробрасываем список друзей дальше по промисам
 
     });

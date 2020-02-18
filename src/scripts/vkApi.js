@@ -21,7 +21,7 @@ function callApi(method, params){ //универсальная функция д
             if (data.error){ // если появилась ошибка
                 reject(data.error)
             } else { // если все норм
-                resolve(data.response)
+                resolve(data)
             }
         })
     })

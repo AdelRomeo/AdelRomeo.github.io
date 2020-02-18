@@ -58,10 +58,21 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
 
         myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
-        console.log(friends.items);
-        console.log('test');
-        //return friends.items; // пробрасываем список друзей дальше по промисам
+        return friends.items; // пробрасываем список друзей дальше по промисам
 
+    })
+    .then((friends)=>{
+        const promises = friends
+            .filter((friend)=>{ friend.country && friend.country.title}) // оставляем в массиве только тех друзей у которых указана страна
+            .map((friend)=>{ // получаем страну и город из друзей/ map срабатывает для каждого элемента массива(друзей)
+                let parts = friend.country.title; // получаем названия страны
+
+                if (friend.city) { // если city существует
+                    parts += ' ' + friend.city.title; // к названию страны прибавляем название города
+                }
+                console.log(parts);
+                return parts;
+            })
     });
 
 

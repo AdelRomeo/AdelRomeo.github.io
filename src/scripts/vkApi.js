@@ -58,9 +58,9 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
 
         myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
+        console.log(friends);
+        //return friends.items; // пробрасываем список друзей дальше по промисам
 
-        return friends.items; // пробрасываем список друзей дальше по промисам
-        console.log(friends.items);
     });
 
 

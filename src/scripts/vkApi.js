@@ -34,15 +34,9 @@ auth()
     .then((data)=>{ // когда список друзей будет получен
         const resu = document.querySelector('.results');
         for (let i = 0; i < data.items.length; i++){ // перебор всех друзей
-            if (data.items[i].country === undefined) {
-                data.items[i].country.title = '';
-            }
-
-            if (data.items[i].country.title === undefined) {
-                data.items[i].country.title = '';
-            }
+            let country = data.items[i].country.title || '';
             resu.innerHTML += data.items[i].id + ' ' + data.items[i].last_name + '<br>';
-            resu.innerHTML += data.items[i].country.title +'<br>';
+            resu.innerHTML += country +'<br>';
             console.log(data.items[i].id);
         }
         console.log(data);

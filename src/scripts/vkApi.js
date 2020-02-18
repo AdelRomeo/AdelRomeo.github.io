@@ -22,7 +22,6 @@ function callApi(method, params){ //универсальная функция д
                 reject(data.error)
             } else { // если все норм
                 resolve(data);
-                console.log(data)
             }
         })
     })
@@ -59,7 +58,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
 
         myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
-        console.log(friends);
+        console.log(friends.items);
         //return friends.items; // пробрасываем список друзей дальше по промисам
 
     });

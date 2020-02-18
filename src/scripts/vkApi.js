@@ -39,9 +39,29 @@ function geoCode(address){
 }
 
 
+let myMap;
+let clusterer;
+
 new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались загрузку карты
     .then(()=>{auth()}) // авторизируемся в ВК
     .then(()=>{callApi('friends.get', {fields: 'city, country'})}) // получаем информацию о друзьях
+    .then((friends)=>{ // получаем список друзей
+        myMap = new ymaps.Map('mapsCont', { // создание яндекс карты. mapsCont - id элемента куда карта будет помещена
+            center: [55.76, 37.00], // координаты карты
+            zoom: 10 // приближение
+        }, { searchControlProvider: 'yandex#search' }); // вывод элементов интерфейса
+
+        clusterer = new ymaps.Clusterer({ // создание кластеререзатора (схлопывание меток на карте из нескольких в одну)
+            present: 'islands#invertedVioletClusterIcons', // тип иконки на карте
+            clusterDisableClickZoom: true, // запрет зума при клике по элементу на курте
+            openBalloonOnClick: false // запрет открытия информации о метке при клике по ней
+        });
+
+        myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
+
+        return friends.items; // пробрасываем список друзей дальше по промисам
+        console.log(friends.items);
+    });
 
 
 // auth()

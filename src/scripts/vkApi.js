@@ -18,9 +18,12 @@ function callApi(method, params){ //универсальная функция д
     params.v = '5.103'; // версия запроса
     return new Promise((resolve, reject) => {
         VK.api(method, params, (data)=>{
-
+            if (data.error){ // если появилась ошибка
+                reject(data.error)
+            } else { // если все норм
                 resolve(data);
                 console.log(data)
+            }
         })
     })
 }
@@ -42,8 +45,8 @@ let clusterer;
 
 new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались загрузку карты
     .then(()=>{auth()}) // авторизируемся в ВК
-    .then(()=>{callApi('friends.get', {fields: 'city, country'})}) // получаем информацию о друзьях
-    .then((data)=>{ // получаем список друзей
+    .then(()=>{ return callApi('friends.get', {fields: 'city, country'})}) // получаем информацию о друзьях
+    .then((friends)=>{ // получаем список друзей
         myMap = new ymaps.Map('mapsCont', { // создание яндекс карты. mapsCont - id элемента куда карта будет помещена
             center: [55.76, 37.00], // координаты карты
             zoom: 10 // приближение
@@ -56,7 +59,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
 
         myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
-        console.log(data);
+        console.log(friends);
         //return friends.items; // пробрасываем список друзей дальше по промисам
 
     });

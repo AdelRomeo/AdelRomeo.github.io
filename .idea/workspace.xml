@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b581689-b01c-473e-be69-f5e663522ff2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/scripts/vkApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/vkApi.js" afterDir="false" />
-    </list>
+    <list default="true" id="2b581689-b01c-473e-be69-f5e663522ff2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="vkApi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/vkApi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="100">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -212,12 +210,12 @@
       <workItem from="1581513837754" duration="3258000" />
       <workItem from="1581607480401" duration="173000" />
       <workItem from="1581780622210" duration="91000" />
-      <workItem from="1582022830675" duration="8356000" />
+      <workItem from="1582022830675" duration="8931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105107000" />
+    <option name="totallyTimeSpent" value="105682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -492,8 +490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/vkApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="100">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>

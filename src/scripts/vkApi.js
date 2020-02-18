@@ -18,12 +18,9 @@ function callApi(method, params){ //универсальная функция д
     params.v = '5.103'; // версия запроса
     return new Promise((resolve, reject) => {
         VK.api(method, params, (data)=>{
-            if (data.error){ // если появилась ошибка
-                reject(data.error)
-            } else { // если все норм
+
                 resolve(data);
                 console.log(data)
-            }
         })
     })
 }

@@ -46,7 +46,7 @@ let clusterer;
 new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались загрузку карты
     .then(()=>{auth()}) // авторизируемся в ВК
     .then(()=>{callApi('friends.get', {fields: 'city, country'})}) // получаем информацию о друзьях
-    .then((friends)=>{ // получаем список друзей
+    .then((data)=>{ // получаем список друзей
         myMap = new ymaps.Map('mapsCont', { // создание яндекс карты. mapsCont - id элемента куда карта будет помещена
             center: [55.76, 37.00], // координаты карты
             zoom: 10 // приближение
@@ -59,7 +59,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
 
         myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
-        console.log(friends);
+        console.log(data);
         //return friends.items; // пробрасываем список друзей дальше по промисам
 
     });

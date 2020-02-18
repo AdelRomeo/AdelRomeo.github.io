@@ -70,7 +70,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
                 if (friend.city) { // если city существует
                     parts += ' ' + friend.city.title; // к названию страны прибавляем название города
                 }
-                console.log(parts);
+                console.log(parts + '11');
                 return parts;
             })
     });

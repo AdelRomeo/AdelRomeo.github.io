@@ -74,7 +74,11 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         return Promise.all(promises); // возвращает промис когда все промисы (в all) разрешатся(выполнятся)
     })
     .then((cords)=>{
-        console.log(cords);
+        const placemarks = cords.map((cord)=>{
+            return new ymaps.Placemark(cord, {}, {preset: 'islands#blueHomeCircleIcon'})
+        });
+        clusterer.add(placemarks);
+        console.log('test');
     });
 
 

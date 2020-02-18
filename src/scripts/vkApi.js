@@ -71,7 +71,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
                 if (friend.city) {parts += ' ' + friend.city.title;} // к названию страны прибавляем название города
                 return parts;
             })
-            .map((string)=>{geocoder(string)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
+            .map((string)=>{geocode(string)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
         return Promise.all(promises); // возвращает промис когда все промисы (в all) разрешатся(выполнятся)
     })
     .then((cords)=>{

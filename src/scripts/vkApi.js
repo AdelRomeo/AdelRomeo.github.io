@@ -79,6 +79,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
         clusterer.add(placemarks);
         console.log('test');
+        console.log(cords);
     });
 
 

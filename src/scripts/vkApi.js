@@ -43,10 +43,10 @@ let myMap;
 let clusterer;
 
 new Promise(resolve => ymaps.ready(resolve)) // ждем загрузку карты
-    .then(() => vkInit()) // авторизация источника данных
-    .then(() => vkApi('friends.get', { fields: 'city,country' })) // получаем список записей
+    .then(() => auth()) // авторизация источника данных
+    .then(() => callApi('friends.get', { fields: 'city,country' })) // получаем список записей
     .then(friends => {
-        myMap = new ymaps.Map('map', {
+        myMap = new ymaps.Map('mapsCont', {
             center: [55.76, 37.64], // Москва
             zoom: 5
         }, {

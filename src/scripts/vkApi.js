@@ -71,6 +71,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
                 return parts;
             })
             .map((string)=>{geocode(string)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
+        console.log(promises);
         return Promise.all(promises); // возвращает промис когда все промисы (в all) разрешатся(выполнятся)
     })
     .then((cords)=>{

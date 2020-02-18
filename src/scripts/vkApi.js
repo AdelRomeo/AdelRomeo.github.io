@@ -62,6 +62,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
 
     })
     .then((friends)=>{ // получение адресов и координат из
+        console.log(friends);
         const promises = friends
             .filter((friend)=>{ friend.country && friend.country.title}) // оставляем в массиве только тех друзей у которых указана страна
             .map((friend)=>{ // получаем страну и город из друзей/ map срабатывает для каждого элемента массива(друзей)

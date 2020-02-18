@@ -27,17 +27,34 @@ function callApi(method, params){ //универсальная функция д
     })
 }
 
-auth()
-    .then(()=>{ // когда все норм
-        return callApi('friends.get', {fields: 'city, country'}) //отправка запроса на получения списка друзей и их фото
-    })
-    .then((data)=>{ // когда список друзей будет получен
-        const resu = document.querySelector('.results');
-        for (let i = 0; i < data.items.length; i++){ // перебор всех друзей
-            let country = data.items[i].country.title || '';
-            resu.innerHTML += data.items[i].id + ' ' + data.items[i].last_name + '<br>';
-            resu.innerHTML += country +'<br>';
-            console.log(data.items[i].id);
-        }
-        console.log(data);
-    });
+function geoCode(address){
+    return ymaps.geocode(address)
+        .then((result)=>{ // result - результат который вернул geocode. фактичиеский адрес (страна, город)
+            const points = result.gepObjects.toArray(); // создается массив из адресов соответсвующих result
+            
+            if (points.length){ //если в массиве есть хоть 1 элемент.
+                return points[0].geometry.getCoordinaters(); // выбираем и возвращаем первый из списка
+            }
+        })
+}
+
+
+new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались загрузку карты
+    .then(()=>{auth()}) // авторизируемся в ВК
+    .then(()=>{callApi('friends.get', {fields: 'city, country'})})
+
+
+// auth()
+//     .then(()=>{ // когда все норм
+//         return callApi('friends.get', {fields: 'city, country'}) //отправка запроса на получения списка друзей и их фото
+//     })
+//     .then((data)=>{ // когда список друзей будет получен
+//         const resu = document.querySelector('.results');
+//         for (let i = 0; i < data.items.length; i++){ // перебор всех друзей
+//             let country = data.items[i].country.title || '';
+//             resu.innerHTML += data.items[i].id + ' ' + data.items[i].last_name + '<br>';
+//             resu.innerHTML += country +'<br>';
+//             console.log(data.items[i].id);
+//         }
+//         console.log(data);
+//     });

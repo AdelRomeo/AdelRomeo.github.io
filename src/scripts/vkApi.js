@@ -35,7 +35,7 @@ auth()
         const resu = document.querySelector('.results');
         for (let i = 0; i < data.items.length; i++){ // перебор всех друзей
             resu.innerHTML += data.items[i].id + ' ' + data.items[i].last_name + '<br>';
-            resu.innerHTML += data.items[i].country.title + data.items[i].city.title + '<br>';
+           // resu.innerHTML += data.items[i].country.title + data.items[i].city.title + '<br>';
             console.log(data.items[i].id);
         }
         console.log(data);

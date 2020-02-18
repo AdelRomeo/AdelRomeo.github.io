@@ -69,6 +69,8 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
                 let parts = friend.country.title; // получаем названия страны
                 // если city существует
                 if (friend.city) {parts += ' ' + friend.city.title;} // к названию страны прибавляем название города
+                console.log(parts);
+                console.log('test parts');
                 return parts;
             })
             .map((string)=>{geocode(string)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес

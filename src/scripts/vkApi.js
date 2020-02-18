@@ -41,7 +41,7 @@ function geoCode(address){
 
 new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались загрузку карты
     .then(()=>{auth()}) // авторизируемся в ВК
-    .then(()=>{callApi('friends.get', {fields: 'city, country'})})
+    .then(()=>{callApi('friends.get', {fields: 'city, country'})}) // получаем информацию о друзьях
 
 
 // auth()

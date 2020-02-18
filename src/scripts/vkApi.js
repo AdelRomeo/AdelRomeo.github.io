@@ -29,7 +29,7 @@ function callApi(method, params){ //универсальная функция д
 
 auth()
     .then(()=>{ // когда все норм
-        return callApi('friends.get', {fields: 'photo_100'}) //отправка запроса на получения списка друзей и их фото
+        return callApi('friends.get', {fields: 'city, country'}) //отправка запроса на получения списка друзей и их фото
     })
     .then((data)=>{ // когда список друзей будет получен
         const resu = document.querySelector('.results');

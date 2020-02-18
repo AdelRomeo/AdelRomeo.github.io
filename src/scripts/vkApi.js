@@ -28,12 +28,12 @@ function callApi(method, params){ //универсальная функция д
 }
 
 function geoCode(address){
-    return ymaps.geocode(address)
+    return ymaps.geoCode(address)
         .then((result)=>{ // result - результат который вернул geocode. фактичиеский адрес (страна, город)
             const points = result.gepObjects.toArray(); // создается массив из адресов соответсвующих result
             
             if (points.length){ //если в массиве есть хоть 1 элемент.
-                return points[0].geometry.getCoordinaters(); // выбираем и возвращаем первый из списка
+                return points[0].geometry.getCoordinates(); // выбираем и возвращаем первый из списка
             }
         })
 }
@@ -71,7 +71,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
                 if (friend.city) {parts += ' ' + friend.city.title;} // к названию страны прибавляем название города
                 return parts;
             })
-            .map((string)=>{geocode(string)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
+            .map((string)=>{geoCode(string)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
         return Promise.all(promises); // возвращает промис когда все промисы (в all) разрешатся(выполнятся)
     })
     .then((cords)=>{

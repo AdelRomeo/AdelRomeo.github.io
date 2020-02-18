@@ -21,7 +21,7 @@ function callApi(method, params){ //универсальная функция д
             if (data.error){ // если появилась ошибка
                 reject(data.error)
             } else { // если все норм
-                resolve(data);
+                resolve(data.response);
             }
         })
     })
@@ -58,7 +58,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
 
         myMap.geoObjects.add(clusterer); // добавление кластеререзатора на карту
-        console.log(friends.response.items);
+        console.log(friends.items);
         console.log('test');
         //return friends.items; // пробрасываем список друзей дальше по промисам
 

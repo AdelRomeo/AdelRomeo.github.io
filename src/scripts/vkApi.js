@@ -30,7 +30,7 @@ function callApi(method, params){ //универсальная функция д
 function geocode(address){
     return ymaps.geocode(address)
         .then((result)=>{ // result - результат который вернул geocode. фактичиеский адрес (страна, город)
-            const points = result.gepObjects.toArray(); // создается массив из адресов соответсвующих result
+            const points = result.geoObjects.toArray(); // создается массив из адресов соответсвующих result
             
             if (points.length){ //если в массиве есть хоть 1 элемент.
                 return points[0].geometry.getCoordinates(); // выбираем и возвращаем первый из списка
@@ -79,8 +79,6 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
             return new ymaps.Placemark(cord, {}, {preset: 'islands#blueHomeCircleIcon'})
         });
         clusterer.add(placemarks);
-        console.log('test');
-        console.log(cords);
     });
 
 

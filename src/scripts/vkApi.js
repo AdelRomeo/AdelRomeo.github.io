@@ -43,51 +43,6 @@ function geocode(address) {
 let myMap;
 let clusterer;
 
-// new Promise(resolve => ymaps.ready(resolve)) // ждем загрузку карты
-//     .then(() => auth()) // авторизация источника данных
-//     .then(() => callApi('friends.get', { fields: 'city,country' })) // получаем список записей
-//     .then(friends => {
-//         myMap = new ymaps.Map('mapsCont', {
-//             center: [55.76, 37.64], // Москва
-//             zoom: 5
-//         }, {
-//             searchControlProvider: 'yandex#search'
-//         });
-//         clusterer = new ymaps.Clusterer({
-//             preset: 'islands#invertedVioletClusterIcons',
-//             clusterDisableClickZoom: true,
-//             openBalloonOnClick: false
-//         });
-//
-//         myMap.geoObjects.add(clusterer);
-//
-//         return friends.items;
-//     }) // инициализация карты
-//     .then(friends => {
-//         const promises = friends
-//             .filter(friend => friend.country && friend.country.title)
-//             .map(friend => {
-//                 let parts = friend.country.title;
-//
-//                 if (friend.city) {
-//                     parts += ' ' + friend.city.title;
-//                 }
-//
-//                 return parts;
-//             })
-//             .map(geocode);
-//
-//         return Promise.all(promises);
-//     }) // получение адресов и координат
-//     .then(coords => {
-//         const placemarks = coords.map(coord => {
-//             return new ymaps.Placemark(coord, {}, { preset: 'islands#blueHomeCircleIcon' })
-//         });
-//
-//         clusterer.add(placemarks);
-//     }) // добавляем гео-объекты на карту
-//     .catch(e => alert('Ошибка: ' + e.message));
-
 new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались загрузку карты
     .then(()=>{auth()}) // авторизируемся в ВК
     .then(()=>{ return callApi('friends.get', {fields: 'city, country'})}) // получаем информацию о друзьях
@@ -117,7 +72,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
                 if (friend.city) {parts += ' ' + friend.city.title;} // к названию страны прибавляем название города
                 return parts;
             })
-            .map(()=>{geocode(friends)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
+            .map(geocode); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
         return Promise.all(promises); // возвращает промис когда все промисы (в all) разрешатся(выполнятся)
     })
     .then((cords)=>{
@@ -127,7 +82,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         clusterer.add(placemarks);
     });
 
-console.log('test2');
+console.log('test3');
 
 
 // auth()

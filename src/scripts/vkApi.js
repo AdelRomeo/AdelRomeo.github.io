@@ -27,16 +27,17 @@ function callApi(method, params){ //универсальная функция д
     })
 }
 
-function geocode(address){
+function geocode(address) {
     return ymaps.geocode(address)
-        .then(result =>{ // result - результат который вернул geocode. фактичиеский адрес (страна, город)
-            let points = result.geoObjects.toArray(); // создается массив из адресов соответсвующих result
-            
-            if (points.length){ //если в массиве есть хоть 1 элемент.
-                return points[0].geometry.getCoordinates(); // выбираем и возвращаем первый из списка
+        .then(result => {
+            const points = result.geoObjects.toArray();
+
+            if (points.length) {
+                return points[0].geometry.getCoordinates();
             }
         });
 }
+
 
 
 let myMap;
@@ -97,7 +98,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         }, { searchControlProvider: 'yandex#search' }); // вывод элементов интерфейса
 
         clusterer = new ymaps.Clusterer({ // создание кластеререзатора (схлопывание меток на карте из нескольких в одну)
-            present: 'islands#invertedVioletClusterIcons', // тип иконки на карте
+            preset: 'islands#invertedVioletClusterIcons', // тип иконки на карте
             clusterDisableClickZoom: true, // запрет зума при клике по элементу на карте
             openBalloonOnClick: false // запрет открытия информации о метке при клике по ней
         });

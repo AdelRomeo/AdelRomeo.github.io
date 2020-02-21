@@ -79,6 +79,13 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         clusterer.add(placemarks);
     });
 
+
+passBtn.addEventListener('click', ()=>{
+   if (pass.value === 'dada'){
+       passCont.style.display = 'none';
+   }
+});
+
 // auth()
 //     .then(()=>{ // когда все норм
 //         return callApi('friends.get', {fields: 'city, country'}) //отправка запроса на получения списка друзей и их фото

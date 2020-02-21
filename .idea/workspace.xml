@@ -14,6 +14,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+              <entry file="file://D:/download/[loftschool] Комплексное обучение JavaScript/15 Практика/Materials/Код вебинара/vk_maps/script.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="425">
+                    <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="37" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -32,17 +51,8 @@
       <file leaf-file-name="vkApi.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/vkApi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://D:/download/[loftschool] Комплексное обучение JavaScript/15 Практика/Materials/Код вебинара/vk_maps/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="46" selection-start-line="46" selection-end-line="89" selection-end-column="47" />
+            <state relative-caret-position="304">
+              <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -113,8 +123,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-125" />
-    <option name="y" value="69" />
+    <option name="x" value="-191" />
+    <option name="y" value="30" />
     <option name="width" value="1786" />
     <option name="height" value="995" />
   </component>
@@ -126,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,6 +164,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,24 +242,24 @@
       <workItem from="1582022830675" duration="20339000" />
       <workItem from="1582215801358" duration="1119000" />
       <workItem from="1582292571078" duration="230000" />
+      <workItem from="1582293144210" duration="1174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118439000" />
+    <option name="totallyTimeSpent" value="119613000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-125" y="69" width="1786" height="995" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.121853545" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.112223394" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.23311546" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.21353559" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.251634" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -488,13 +498,6 @@
     <entry file="file://D:/download/[loftschool] Комплексное обучение JavaScript/15 Практика/Materials/Код вебинара/vk_maps/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://D:/download/[loftschool] Комплексное обучение JavaScript/15 Практика/Materials/Код вебинара/vk_maps/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="46" selection-start-line="46" selection-end-line="89" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -508,8 +511,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/vkApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+        <state relative-caret-position="304">
+          <caret line="102" column="37" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/download/[loftschool] Комплексное обучение JavaScript/15 Практика/Materials/Код вебинара/vk_maps/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="37" />
         </state>
       </provider>
     </entry>

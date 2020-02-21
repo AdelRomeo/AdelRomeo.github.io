@@ -110,14 +110,14 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
     .then((friends)=>{ // получение адресов и координат из
         console.log(friends);
         const promises = friends
-            .filter(friend=> friend.country && friend.country.title) // оставляем в массиве только тех друзей у которых указана страна
-            .map(friend=>{ // получаем страну и город из друзей/ map срабатывает для каждого элемента массива(друзей)
+            .filter(friend => friend.country && friend.country.title) // оставляем в массиве только тех друзей у которых указана страна
+            .map(friend => { // получаем страну и город из друзей/ map срабатывает для каждого элемента массива(друзей)
                 let parts = friend.country.title; // получаем названия страны
                 // если city существует
                 if (friend.city) {parts += ' ' + friend.city.title;} // к названию страны прибавляем название города
                 return parts;
             })
-            .map((string)=>{geocode(string)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
+            .map(geocode); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
         return Promise.all(promises); // возвращает промис когда все промисы (в all) разрешатся(выполнятся)
     })
     .then((cords)=>{
@@ -126,6 +126,8 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
         clusterer.add(placemarks);
     });
+
+console.log('test1');
 
 
 // auth()

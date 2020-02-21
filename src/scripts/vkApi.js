@@ -117,7 +117,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
                 if (friend.city) {parts += ' ' + friend.city.title;} // к названию страны прибавляем название города
                 return parts;
             })
-            .map(geocode); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
+            .map(()=>{geocode(friends)}); // отправляем адреса в геокод и получаем из адресов координаты //string - адрес
         return Promise.all(promises); // возвращает промис когда все промисы (в all) разрешатся(выполнятся)
     })
     .then((cords)=>{
@@ -127,7 +127,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         clusterer.add(placemarks);
     });
 
-console.log('test1');
+console.log('test2');
 
 
 // auth()

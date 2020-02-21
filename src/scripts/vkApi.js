@@ -38,8 +38,6 @@ function geocode(address) {
         });
 }
 
-
-
 let myMap;
 let clusterer;
 
@@ -48,7 +46,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
     .then(()=>{ return callApi('friends.get', {fields: 'city, country'})}) // получаем информацию о друзьях
     .then((friends)=>{ // получаем список друзей
         myMap = new ymaps.Map('mapsCont', { // создание яндекс карты. mapsCont - id элемента куда карта будет помещена
-            center: [55.76, 37.00], // координаты карты
+            center: [56.215276, 95.71285689686749], // координаты карты
             zoom: 10 // приближение
         }, { searchControlProvider: 'yandex#search' }); // вывод элементов интерфейса
 
@@ -63,7 +61,6 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
 
     })
     .then((friends)=>{ // получение адресов и координат из
-        console.log(friends);
         const promises = friends
             .filter(friend => friend.country && friend.country.title) // оставляем в массиве только тех друзей у которых указана страна
             .map(friend => { // получаем страну и город из друзей/ map срабатывает для каждого элемента массива(друзей)
@@ -81,9 +78,6 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
         });
         clusterer.add(placemarks);
     });
-
-console.log('test3');
-
 
 // auth()
 //     .then(()=>{ // когда все норм

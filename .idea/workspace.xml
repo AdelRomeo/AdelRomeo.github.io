@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b581689-b01c-473e-be69-f5e663522ff2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/build/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/styles/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/styles/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/vkApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/vkApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#ul#0;n#nav#0;n#header#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -36,17 +32,29 @@
       <file leaf-file-name="global.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
+            <state relative-caret-position="1525">
               <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vkApi.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vkApi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/vkApi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
+            <state relative-caret-position="875">
               <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="konspect.js" pinned="false" current-in-tab="true">
+        <entry file="file://D:/download/[loftschool] Комплексное обучение JavaScript/16 Организация кода, наследование и ООП (классы, прототипы, конструкторы и модули)/коспект/konspect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/styles/global.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/scripts/vkApi.js" />
+        <option value="D:/download/[loftschool] Комплексное обучение JavaScript/16 Организация кода, наследование и ООП (классы, прототипы, конструкторы и модули)/коспект/konspect.js" />
       </list>
     </option>
   </component>
@@ -130,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +168,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,15 +199,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.script.js">
+  <component name="RunManager" selected="Node.js.konspect.js">
+    <configuration name="konspect.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="konspect.js" working-dir="D:/download/[loftschool] Комплексное обучение JavaScript/16 Организация кода, наследование и ООП (классы, прототипы, конструкторы и модули)/коспект" />
     <configuration name="script.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="script.js" working-dir="D:/download/[loftschool] Комплексное обучение JavaScript/15 Практика/Materials/Код вебинара/vk_maps" />
     <configuration name="vkApi" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="vkApi.js" working-dir="$PROJECT_DIR$/src/scripts" />
     <list>
       <item itemvalue="Node.js.vkApi" />
       <item itemvalue="Node.js.script.js" />
+      <item itemvalue="Node.js.konspect.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.konspect.js" />
         <item itemvalue="Node.js.script.js" />
         <item itemvalue="Node.js.vkApi" />
       </list>
@@ -236,12 +248,13 @@
       <workItem from="1582022830675" duration="20339000" />
       <workItem from="1582215801358" duration="1119000" />
       <workItem from="1582292571078" duration="230000" />
-      <workItem from="1582293144210" duration="5848000" />
+      <workItem from="1582293144210" duration="5958000" />
+      <workItem from="1582557573586" duration="1512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124287000" />
+    <option name="totallyTimeSpent" value="125909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -252,9 +265,9 @@
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.23311546" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.35185185" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.2037037" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.2037037" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -278,13 +291,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -495,7 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
+        <state relative-caret-position="1525">
           <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="5" />
         </state>
       </provider>
@@ -503,7 +509,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#a#0;n#ul#0;n#nav#0;n#header#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -513,8 +519,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/vkApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
+        <state relative-caret-position="875">
           <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/download/[loftschool] Комплексное обучение JavaScript/16 Организация кода, наследование и ООП (классы, прототипы, конструкторы и модули)/коспект/konspect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

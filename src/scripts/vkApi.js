@@ -81,7 +81,7 @@ new Promise((resolve)=>{ymaps.ready(resolve)}) // когда дождались 
 
 
 passBtn.addEventListener('click', ()=>{
-   if (pass.value === 'dada'){
+   if (pass.value === 'dadada'){
        passCont.style.display = 'none';
    }
 });
